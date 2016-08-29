@@ -1,0 +1,188 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+#container{
+  height: 1200px;
+  width: 1400px;
+  padding: 20px;
+}
+
+#header ul li{
+  display: inline-block;
+}
+
+#header ul{
+  list-style-type: none;
+  margin-left: 280px;
+  border-style: 1px solid;
+  border-color: black;
+  border-style: solid;
+  margin-left: 1000px;
+  border-width: thin;
+}
+
+#header li{
+  margin: 5px 0px 0px 0px;
+}
+
+#header h1{
+  display: inline-block;
+  color: lightblue;
+  vertical-align: top;
+  padding-top: 12px;
+}
+#header span{
+  display: inline-block;
+  color: gray;
+}
+
+#header h2{
+  color: white;
+  background-color: darkblue;
+  width: 1400px;
+  height: 40px;
+  /* margin-top: 0px; */
+  padding-left: 5px;
+  padding-top: 10px;
+}
+
+#sidebar{
+  display: inline-block;
+  width: 210px;
+  height: 200px;
+  padding-top: 50px;
+}
+
+#sidebar h3{
+  color: lightblue;
+  display: block;
+  padding-bottom: 15px;
+}
+
+#sidebar span{
+  display: block;
+  color: darkred;
+}
+
+#sidebar p{
+  display: block;
+}
+
+.sidebutton1{
+  display: block;
+  color: white;
+  background-color: blue;
+  width: 185px;
+  height: 25px;
+  margin-top: 10px;
+}
+
+.sidebutton2{
+  display: block;
+  color: white;
+  background-color: orange;
+  width: 185px;
+  height: 25px;
+  margin-top: 10px;
+}
+
+.underbuttontext{
+  display: block;
+  font-size: small;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+#sidebar img{
+  display: block;
+  /*padding-top: 20px;*/
+}
+
+#picheader{
+  display: block;
+  color: blue;
+}
+
+#maincontent{
+  width: 1200px;
+  vertical-align: top;
+  margin-left: 300px;
+  margin-top: -260px;
+}
+
+#home{
+  display: inline-block;
+  vertical-align: top;
+}
+
+#maincontent h5{
+  display: inline-block;
+  color: lightblue;
+  vertical-align: top;
+  padding-top: 5px;
+}
+
+#phone{
+  display: block;
+  margin-left: 810px;
+  vertical-align: top;
+  margin-top: -20px;
+}
+
+#maincontent ul{
+  list-style-type: none;
+  margin-left: 851px;
+  margin-top: -40px;
+}
+}
+
+#maincontent li{
+  display: block;
+}
+
+#maincontent span{
+  color: black;
+  font-size: medium;
+  font-weight: bolder;
+}
+
+#maintext{
+  width: 1000px;
+}
+
+#maintext h3{
+  color: lightblue;
+  padding-bottom: 10px;
+}
+
+#maintext span{
+  font-weight: bold;
+  color: black;
+}
+
+#maintext p{
+  padding-bottom: 5px;
+}
+
+#startedtoday {
+  border: 5px solid lightblue;
+  width: 700px;
+  height: 100px;
+}
+
+#startedtoday span{
+  font-weight: bold;
+}
+
+button{
+  background-color: green
+  color: white;
+  width: 200px;
+  height: 100px;
+}
+
+/*.list li{
+  width: 1000px;
+}*/

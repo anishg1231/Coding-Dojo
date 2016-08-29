@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>jQuery</title>
+
+  <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+  <script type="text/javascript">
+  $(document).ready(function(){
+    $("#top button").click (function() {
+      $("#top p").addClass("red");
+    })
+    $("#middle button").click (function() {
+      $("#book").slideToggle("fast");
+    })
+    $("#bottom button").click (function () {
+      $("#bottom p").append("yes!");
+    })
+    $("#form").click (function () {
+      alert(".focus called");
+    })
+    $("#gender").change (function() {
+      // console.log($(this));
+      // console.log(this);
+      alert($(this).val());
+      // alert($("#gender").val());
+      // var singleValues = $("#gender").val();
+    })
+    $("#text").click(function () {
+      $("#text p").text("IT WORKS");
+    })
+
+    $(".show").click(function () {
+      $("#show_hide p").show("fast");
+    })
+
+    $(".hide").click(function () {
+      $("#show_hide p").hide("fast");
+    })
+
+    $("#fadein button").click(function () {
+      $("#fadein img:").fadeIn("slow");
+    })
+
+
+  });
+  </script>
+
+  <style>
+  .red{
+    color: red;
+  }
+  #bottom p{
+    background-color: orange;
+  }
+
+  #show_hide p{
+    background-color: yellow;
+  }
+
+  #fadein img{
+    background-image: url("http://www.planwallpaper.com/static/images/ZhGEqAP.jpg");
+    display: none;
+  }
+  </style>
+
+</head>
+<body>
+
+  <div id="top">
+    <h1>AddClass</h1>
+    <button>AddClass</button>
+    <p>
+      Click the button to add class 'red' to this paragraph
+    </p>
+  </div>
+
+  <div id="middle">
+    <h1>Slidetoggle</h1>
+    <button>Slidetoggle</button>
+    <img id="book" src="book.png" alt="" />
+    <p>
+      Click the button to slidetoggle a hidden image
+    </p>
+  </div>
+
+  <div id="bottom">
+    <h1>Append</h1>
+    <button>Append</button>
+    <p>
+      Click the button to append a new paragraph!
+    </p>
+  </div>
+
+  <div id="form">
+    <form>
+      <input type="text" name="name" value="First Name">
+      <input type="text" name="name" value="Second Name">
+      <select id="gender" name="Gender">
+        <option>Male</option>
+        <option>Female</option>
+      </select>
+    </form>
+  </div>
+
+  <div id="text">
+    <h1>Text</h1>
+    <button>Text</button>
+    <p>
+      Click the button to see text method!"Hello"
+    </p>
+  </div>
+
+  <div id="show_hide">
+    <h1>Show something</h1>
+    <button class="show">Show it</button>
+    <button class="hide">Hide it</button>
+    <p>
+      hello
+    </p>
+  </div>
+  <div id="fadein">
+    <h1>fade</h1>
+    <button>Fade in</button>
+    <img src="wallpaper.jpg" alt="" />
+  </div>
+
+
+
+
+</body>
+</html>

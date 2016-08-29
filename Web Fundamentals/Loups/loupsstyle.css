@@ -1,0 +1,40 @@
+
+
+h1{
+  background-color: lightgray;
+  border-radius: 15px;
+  width: auto;
+  height: 50px;
+  padding-top: 10px;
+}
+
+#nav{
+  background-color: lightgray;
+  display:inline-block;
+  border-radius: 15px;
+  height: 400px;
+  width: 185px;
+  /*padding: 10px;*/
+  /*margin: 10px;*/
+  vertical-align: top;
+}
+
+#essay{
+  background-color: darkgray;
+  display: inline-block;
+  height: 500px;
+  width: 640px;
+  border-radius: 15px;
+  padding: 10px;
+  margin-left: 25px;
+}
+
+footer{
+  background-color: lightgray;
+  border-radius: 15px;
+  width: auto;
+  height: 50px;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}

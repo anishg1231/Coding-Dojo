@@ -1,0 +1,174 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+#container {
+  height: 1400px;
+  width: 1200px;
+  background-color: black;
+  padding: 5px;
+}
+
+#header p{
+  color: white;
+  margin-left: 1030px;
+  vertical-align: top;
+  display: inline-block;
+  margin-top: -50px;
+}
+
+#header{
+  background-color: #1c1b1b;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+#navbar ul{
+  list-style-type: none;
+  color: white;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #3f3f3f;
+}
+
+#navbar li {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 5px 15px;
+  text-decoration: none;
+  border-right: 1px solid #575555;
+  font-size: small;
+}
+
+#navbar li:last-child {
+  border-right: none;
+}
+
+#main_image img{
+  width: 1200px;
+  border-bottom: 3px solid grey;
+}
+
+#maincontent{
+  display: inline-block;
+  background-color: #1c1b1b;
+  width: 1200px;
+  height: 190px;
+
+}
+.orangetext{
+  width: 45px;
+  display: inline-block;
+  color: orange;
+  vertical-align: top;
+  margin: 5px 5px 0px -6px;
+}
+
+#text1{
+  width: 175px;
+  display: inline-block;
+  color: white;
+  padding-top: 40px;
+}
+
+#text2{
+  width: 175px;
+  display: inline-block;
+  color: white;
+  padding-top: 40px;
+}
+
+#text3{
+  width: 175px;
+  display: inline-block;
+  color: white;
+  padding-top: 40px;
+}
+
+#text4{
+  width: 175px;
+  display: inline-block;
+  color: white;
+  padding-top: 40px;
+}
+
+.icon{
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 10px;
+}
+
+#middlecontent{
+  display: inline-block;
+}
+
+#middlecontent h3{
+  color: white;
+  padding-left: 20px;
+  padding-top: 25px;
+  display: inline-block;
+  width: 600px;
+  font-size: larger;
+  margin-bottom: 5px;
+}
+
+#middlecontent p{
+  display: inline-block;
+  color: white;
+  width: 600px;
+  padding-left: 20px;
+  font-size: x-small;
+}
+
+#middlecontent button{
+  color: white;
+  background-color: orange;
+  margin-left: 435px;
+  width: 85px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+#lowercontent{
+  display: inline-block;
+  background-color: #1c1b1b;
+  width: 1200px;
+  height: 350px;
+  margin-top: 40px;
+}
+
+.boxes {
+  width: 257px;
+  display: inline-block;
+  margin: 10px 20px 0px 20px;
+  vertical-align: top;
+}
+
+#lowercontent h4{
+  color: white;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.portname{
+  color: orange;
+  margin-top: 10px;
+}
+
+#lowercontent p{
+  color: white;
+  margin-top: 10px;
+  font-size: small;
+}
+
+.image {
+  border: 2px solid #5c5a5a;
+}
+
+#lowercontent h6{
+  color: orange;
+  margin-left: 1055px;
+}

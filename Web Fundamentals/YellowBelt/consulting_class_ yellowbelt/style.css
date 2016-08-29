@@ -1,0 +1,83 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  color: grey;
+}
+
+#container {
+  height: 1600px;
+  width: 1500px;
+  background-color: darkblue;
+  padding: 30px;
+}
+#header h1, ul, li {
+  display: inline-block;
+}
+#header h1{
+  padding: 10px;
+}
+#header ul {
+  margin-left: 280px;
+}
+#header li {
+  margin: 5px 50px 0px 50px;
+}
+#back {
+  background-color: white;
+  height: 1400px;
+  width: 1400px;
+  padding: 30px;
+}
+#main_image {
+  width:1400px;
+}
+.boxes {
+  height: 400px;
+  width: 370px;
+  background-color: lightblue;
+  display: inline-block;
+  margin: 30px 50px 0px 0px;
+  vertical-align: top;
+  padding: 30px;
+}
+.boxes:last-child {
+    margin: 30px 0px 0px 0px;
+}
+.icon {
+  width: 50px;
+  height: 50px;
+}
+
+.boxes h2 {
+  display: inline-block;
+  margin-top: 12px;
+  vertical-align: top;
+}
+.boxes button {
+  margin-top: 240px;
+  padding:20px;
+  border-radius: 10px;
+  background-color: blue;
+}
+#bottom_content {
+  margin-top: 20px;
+}
+#world h2 {
+  padding: 10px 0px;
+}
+#world p {
+  display: inline-block;
+  width: 600px;
+  margin: 20px;
+}
+#world {
+  display: inline-block;
+  width: 940px;
+}
+#learn{
+  width: 400px;
+  display: inline-block;
+}
+#learn a {
+  margin-left: 20px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Disappearing Ninja</title>
+    <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+           $('img').click(function(){
+               $(this).hide();
+               $( 'button' ).click(function() {
+                 $( 'img' ).show( 'slow' );
+               });
+             });
+           });
+    </script>
+    <style>
+    #image{
+      width: 400px;
+      height: 300px;
+      display: inline-block;
+    }
+    button{
+      background-color: orange;
+      color: white;
+      width: 85px;
+      height: 35px;
+    }
+
+    </style>
+  </head>
+  <body>
+    <h1>Disappearing Ninja Turtles!! </h1>
+    <img id="image" src="ninja_turtles.jpg" alt="" />
+    <img id="image" src="ninja_turtles.jpg" alt="" />
+    <img id="image" src="ninja_turtles.jpg" alt="" />
+    <img id="image" src="ninja_turtles.jpg" alt="" />
+    <img id="image" src="ninja_turtles.jpg" alt="" />
+    <img id="image" src="ninja_turtles.jpg" alt="" />
+    <button>Restore</button>
+  </body>
+</html>

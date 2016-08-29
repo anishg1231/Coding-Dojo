@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Adding an User</title>
+    <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script type="text/javascript">
+    $(document).ready(function () {
+      $('.users').submit(function () {
+        alert('you submited it!')
+        console.log()
+        $('#first').append($('#f_name').val())
+
+        console.log()
+        $('#last').append($('#l_name').val())
+
+        console.log()
+        $('#e_address').append($('#email').val())
+
+        console.log()
+        $('#number').append($('#contact').val())
+        return false;
+      })
+
+
+    })
+
+    </script>
+    <style>
+    .users{
+      /*display: block;*/
+    }
+    table{
+      border: 2px solid black;
+    }
+    td{
+      padding-right: 20px;
+    }
+
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <table id="display">
+        <tbody>
+          <tr>
+            <td id = "first">First Name: </td>
+            <td id="last">Last Name: </td>
+            <td id="e_address">Email: </td>
+            <td id="number">Contact #: </td>
+          </tr>
+        </tbody>
+      </table>
+      <h1>Add User</h1>
+      <form class="users" method="post"><br>
+        First Name:<input id='f_name' type="text" name="name" value="First Name"><br>
+        Last Name:<input id='l_name' type="text" name="name" value="Last Name"><br>
+        Email Address:<input id='email' type="text" name="name" value="Email"><br>
+        Contact No:<input id='contact' type="text" name="name" value="Number"><br>
+        <input type="submit" name="name" value="Add User">
+      </form>
+    </div>
+  </body>
+</html>
