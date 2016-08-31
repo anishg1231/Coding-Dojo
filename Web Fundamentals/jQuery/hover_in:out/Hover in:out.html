@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hover in/out</title>
+    <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $("img").hover(function(){
+        var temp = $(this).attr("src");
+        $(this).attr("src", $(this).attr("data-alt-src"));
+        $(this).attr("data-alt-src", temp);
+      });
+    });
+
+    </script>
+    <style>
+    body{
+      background-color: #282b38;
+    }
+
+    h1{
+      color: white;
+      text-align: center;
+    }
+    </style>
+  </head>
+  <body>
+    <div id="images">
+      <h1>Chicago Bears Jersey</h1>
+      <img src="img/ditka.jpg" data-alt-src="img/ditka_back.jpg" />
+      <img src="img/jay.jpg" data-alt-src="img/jay_back" />
+      <img src="img/kevin.jpg" data-alt-src="img/kevin_back.jpg" />
+      <img src="img/kyle.jpg" data-alt-src="img/kyle_back.jpg" />
+    </div>
+  </body>
+</html>
