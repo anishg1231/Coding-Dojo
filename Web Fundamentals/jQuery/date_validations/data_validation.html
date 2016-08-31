@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Data Validation</title>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/start/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script type="text/javascript">
+    $( function() {
+    var dateFormat = "mm/dd/yy",
+      from = $( "#from" )
+        .datepicker({
+          defaultDate: "+1w",
+          changeMonth: true,
+          numberOfMonths: 3
+        })
+        .on( "change", function() {
+          to.datepicker( "option", "minDate", getDate( this ) );
+        }),
+      to = $( "#to" ).datepicker({
+        defaultDate: "+1w",
+        changeMonth: true,
+        numberOfMonths: 3
+      })
+      .on( "change", function() {
+        from.datepicker( "option", "maxDate", getDate( this ) );
+      });
+
+    function getDate( element ) {
+      var date;
+      try {
+        date = $.datepicker.parseDate( dateFormat, element.value );
+      } catch( error ) {
+        date = null;
+      }
+
+      return date;
+    }
+    $('#button').click(function () {
+      var name = $('#name').val()
+      var departure = $('#from').val()
+      var returns = $('#to').val()
+      if (name == '') {
+        alert('Please type in name');
+      }else {
+          alert('Thanks ' + name + '! Your Cruise leaves on ' +departure+ ' and returns on ' +returns+ '!'  );
+        }
+    })
+  });
+    </script>
+
+    <style media="screen">
+      #from{
+        display: block;
+        width: 150px;
+        height: 20px;
+        margin-bottom: 10px;
+      }
+
+      #to{
+        display: block;
+        width: 150px;
+        height: 20px;
+        margin-bottom: 10px;
+      }
+
+      #name{
+        display: block;
+        width: 150px;
+        height: 20px;
+        margin-bottom: 10px;
+      }
+
+      #button{
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+  <div>
+    <h1>Welcome to Coding Dojo plan-a-cruise!</h1>
+    <!-- <label for="from">From</label> -->
+    <input type="text" id="from" name="from" value="From:">
+    <!-- <label for="to">to</label> -->
+    <input type="text" id="to" name="to" value="To:">
+    <!-- <label for="name">Name</label> -->
+    <input type="text" id="name" name="name" value="Name:">
+    <input type="button" id="button"name="name" value="Check Dates">
+  </div>
+
+  </body>
+</html>
