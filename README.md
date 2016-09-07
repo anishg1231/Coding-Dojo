@@ -1,3 +1,0 @@
-# Coding-Dojo
-
-Hello World!

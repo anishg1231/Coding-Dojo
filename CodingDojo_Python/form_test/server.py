@@ -12,5 +12,9 @@ def create_user():
     email = request.form['email']
     return redirect('/')
 
+@app.route('/show')
+def show_user():
+    return render_template('user.html', name='Joy', email= 'kpatel@codingdojo.com')
+
 
 app.run(debug=True)
