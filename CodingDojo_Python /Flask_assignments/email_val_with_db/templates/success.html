@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dojo Wall</title>
+  </head>
+  <body>
+    <h1>Welcome to CodingDojo Wall</h1>
+    <h4>Welcome {{session['first_name']}}!</h4>
+    <form action="/logout" method="post">
+      <button>Logout</button>
+    </form>
+
+    <form action="/wall" method="post">
+      <textarea name="post" rows="10" cols="160"></textarea>
+      <button>Post a message</button>
+    </form>
+    {% if messages %}
+    {% for message in messages %}
+    <p>
+      {{message}}
+      {{session['first_name']}}
+      {{message['created_by']}}
+      {{message['updated_by']}}
+      {{message['messages']}}
+    </p>
+    <form action="/comment" method="post">
+      <textarea name="comment" rows="8" cols="40"></textarea>
+      {{comment['id']}}
+      <!-- {{message}} -->
+      {{session['first_name']}}
+      {{comment['created_by']}}
+      {{comment['updated_by']}}
+      {{comment['messages']}}
+      <input type="hidden" name="name" value= {{message['id']}}>
+      <button>Comment</button>
+    </form>
+    {% endfor %}
+    {% endif %}
+
+    <!-- {% if messages %}
+    {% for message in messages %}
+    <p>
+    {{session['first_name']}}
+    {{message['created_by']}}
+    {{message['updated_by']}}
+    {{message['messages']}}
+  </p>
+    {% endfor %}
+    {% endif %} -->
+
+  </body>
+</html>

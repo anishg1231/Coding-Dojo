@@ -1,0 +1,31 @@
+
+#container{
+  background-color: black;
+  width: 1200px;
+  height: 900px;
+  display: inline-block;
+}
+
+.box{
+  display: inline-block;
+  width: 285px;
+  height: 200px;
+  background-color: yellow;
+  padding-left: 12px;
+}
+
+.box1{
+  width: 1200px;
+  height: 200px;
+  background-color: yellow;
+}
+
+h1{
+  color: black;
+  background-color: yellow;
+}
+
+button{
+width: 100px;
+height: 25px
+}
